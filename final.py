@@ -11,7 +11,6 @@ import streamlit as st
 
 
 # 한글 폰트 설정
-plt.rcParams['font.family'] = 'DejaVu Sans'
 plt.rcParams['axes.unicode_minus'] = False
 
 # 도입 페이지 제목
