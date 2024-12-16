@@ -26,9 +26,9 @@ st.markdown("""
 # 홈 페이지
 page = st.sidebar.selectbox("메뉴 선택", ["홈", "따릉이 데이터", "지도 데이터", "환경 데이터"])
 if page == "홈":
-    st.image("images/따릉이소개.jpeg", caption="서울자전거 개요", use_column_width=True)
-    st.image("images/따릉이 실제 사진.jpeg", caption="서울 시내 따릉이 대여소 모습", use_column_width=True)
-    st.image("images/공공자전거.jpg", caption="따릉이 일러스트", use_column_width=True)
+    st.image("따릉이소개.jpeg", caption="서울자전거 개요", use_column_width=True)
+    st.image("따릉이 실제 사진.jpeg", caption="서울 시내 따릉이 대여소 모습", use_column_width=True)
+    st.image("공공자전거.jpg", caption="따릉이 일러스트", use_column_width=True)
     
 # 페이지 안내
 st.markdown("""
@@ -57,19 +57,19 @@ if page == "따릉이 데이터":
     
     # 성별 이용건수 분석
     st.subheader("1. 성별 따릉이 이용건수")
-    st.image("images/성별 따릉이 이용건수.png", caption="성별 이용건수 분석", use_column_width=True)
+    st.image("성별 따릉이 이용건수.png", caption="성별 이용건수 분석", use_column_width=True)
 
     # 연령대별 이용건수 분석
     st.subheader("2. 연령대별 따릉이 이용건수")
-    st.image("images/연령대별 따릉이 이용건수.png", caption="연령대별 이용건수 분석", use_column_width=True)
+    st.image("연령대별 따릉이 이용건수.png", caption="연령대별 이용건수 분석", use_column_width=True)
 
     # 시간대별 이용건수 분석
     st.subheader("3. 시간대별 따릉이 이용건수")
-    st.image("images/시간대별 따릉이 이용건수.png", caption="시간대별 이용건수 분석", use_column_width=True)
+    st.image("시간대별 따릉이 이용건수.png", caption="시간대별 이용건수 분석", use_column_width=True)
 
     # 요일별 이용건수 분석
     st.subheader("4. 요일별 따릉이 이용건수")
-    st.image("images/요일별 따릉이 이용건수.png", caption="요일별 이용건수 분석", use_column_width=True)
+    st.image("요일별 따릉이 이용건수.png", caption="요일별 이용건수 분석", use_column_width=True)
 
 # 지도 데이터 페이지
 if page == "지도 데이터":
@@ -82,9 +82,9 @@ if page == "지도 데이터":
 
     
     # 로컬 파일 경로 설정
-    population_data_path = "data/서울시 인구밀도.xlsx"
-    bike_data_path = "data/공공자전거 대여소 정보(24.6월 기준).xlsx"
-    geojson_path = "data/서울특별시 지역구.geojson"
+    population_data_path = "서울시 인구밀도.xlsx"
+    bike_data_path = "공공자전거 대여소 정보(24.6월 기준).xlsx"
+    geojson_path = "서울특별시 지역구.geojson"
 
     # 파일 존재 여부 확인 함수
     def check_file_path(path, description):
