@@ -12,7 +12,6 @@ import matplotlib.font_manager as fm
 
 
 # Matplotlib에 폰트 적용
-plt.rcParams['font.family'] = font_prop.get_name()
 plt.rcParams['axes.unicode_minus'] = False  # 마이너스 기호 깨짐 방지
 
 # 도입 페이지 제목
