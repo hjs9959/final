@@ -9,6 +9,12 @@ import os
 import matplotlib
 import streamlit as st
 
+import matplotlib.font_manager as fm
+import streamlit as st
+
+# 설치된 폰트 목록 출력
+fonts = [f.fname for f in fm.fontManager.ttflist]
+st.write(fonts)
 # NanumGothic 폰트 경로 설정 (Streamlit Cloud의 설치 경로)
 font_path = "/usr/share/fonts/truetype/nanum/NanumGothic.ttf"
 font_prop = fm.FontProperties(fname=font_path)
