@@ -6,7 +6,13 @@ from streamlit_folium import st_folium
 import streamlit as st
 import matplotlib.pyplot as plt
 import os
+import matplotlib.pyplot as plt
+import matplotlib
+import streamlit as st
 
+# 한글 폰트 설정
+plt.rcParams['font.family'] = 'NanumGothic'
+plt.rcParams['axes.unicode_minus'] = False  # 마이너스 기호 깨짐 방지
 
 # 도입 페이지 제목
 st.markdown("""
