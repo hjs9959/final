@@ -26,9 +26,9 @@ st.markdown("""
 # 홈 페이지
 page = st.sidebar.selectbox("메뉴 선택", ["홈", "따릉이 데이터", "지도 데이터", "환경 데이터"])
 if page == "홈":
-    st.image("따릉이소개.jpeg", caption="서울자전거 개요", use_column_width=True)
-    st.image("따릉이 실제 사진.jpeg", caption="서울 시내 따릉이 대여소 모습", use_column_width=True)
-    st.image("공공자전거.jpg", caption="따릉이 일러스트", use_column_width=True)
+    st.image("따릉이소개.jpeg", caption="서울자전거 개요", use_container_width=True)
+    st.image("따릉이 실제 사진.jpeg", caption="서울 시내 따릉이 대여소 모습", use_container_width=True)
+    st.image("공공자전거.jpg", caption="따릉이 일러스트", use_container_width=True)
     
 # 페이지 안내
 st.markdown("""
@@ -57,19 +57,19 @@ if page == "따릉이 데이터":
     
     # 성별 이용건수 분석
     st.subheader("1. 성별 따릉이 이용건수")
-    st.image("성별 따릉이 이용건수.png", caption="성별 이용건수 분석", use_column_width=True)
+    st.image("성별 따릉이 이용건수.png", caption="성별 이용건수 분석", use_container_width=True)
 
     # 연령대별 이용건수 분석
     st.subheader("2. 연령대별 따릉이 이용건수")
-    st.image("연령대별 따릉이 이용건수.png", caption="연령대별 이용건수 분석", use_column_width=True)
+    st.image("연령대별 따릉이 이용건수.png", caption="연령대별 이용건수 분석", use_container_width=True)
 
     # 시간대별 이용건수 분석
     st.subheader("3. 시간대별 따릉이 이용건수")
-    st.image("시간대별 따릉이 이용건수.png", caption="시간대별 이용건수 분석", use_column_width=True)
+    st.image("시간대별 따릉이 이용건수.png", caption="시간대별 이용건수 분석", use_container_width=True)
 
     # 요일별 이용건수 분석
     st.subheader("4. 요일별 따릉이 이용건수")
-    st.image("요일별 따릉이 이용건수.png", caption="요일별 이용건수 분석", use_column_width=True)
+    st.image("요일별 따릉이 이용건수.png", caption="요일별 이용건수 분석", use_container_width=True)
 
 # 지도 데이터 페이지
 if page == "지도 데이터":
