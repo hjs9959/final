@@ -76,7 +76,7 @@ if page == "지도 데이터":
     st.markdown("""
     <div style="text-align: center; font-size: 36px; font-weight: bold; color: #2c3e50; margin-bottom: 20px;">
     🗺 서울시 00구별<br>
-    따따릉이 위치와 인구밀도
+    따릉이 위치와 인구밀도
     </div>
     """, unsafe_allow_html=True)
 
