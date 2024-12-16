@@ -1,5 +1,3 @@
-touch requirements.txt
-
 streamlit
 geopandas
 pandas
