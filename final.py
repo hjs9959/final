@@ -9,9 +9,13 @@ import os
 import matplotlib
 import streamlit as st
 
+# NanumGothic 폰트 경로 설정 (Streamlit Cloud의 설치 경로)
+font_path = "/usr/share/fonts/truetype/nanum/NanumGothic.ttf"
+font_prop = fm.FontProperties(fname=font_path)
 
-# 한글 폰트 설정
-plt.rcParams['axes.unicode_minus'] = False
+# Matplotlib에 폰트 적용
+plt.rcParams['font.family'] = font_prop.get_name()
+plt.rcParams['axes.unicode_minus'] = False  # 마이너스 기호 깨짐 방지
 
 # 도입 페이지 제목
 st.markdown("""
