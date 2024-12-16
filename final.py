@@ -6,7 +6,6 @@ from streamlit_folium import st_folium
 import streamlit as st
 import matplotlib.pyplot as plt
 import os
-import matplotlib.pyplot as plt
 import matplotlib
 import streamlit as st
 
